@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work Day Scheduler</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Work Day Scheduler</h1>
+
+    <script src="./moment.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    <p>A Simple Scheduling App for your day!<br></p>
+    <p id = "todayDate"></p>
+    
+    <script> 
+    console.log(moment());
+    var d = moment().format('dddd MMMM Do YYYY, h:mm:ss a');
+
+    document.getElementById("todayDate").innerHTML = d
+        
+    
+
+
+</script>
+    
+    
+
+</body>
+
+</html>
